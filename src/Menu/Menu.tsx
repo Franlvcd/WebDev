@@ -1,8 +1,17 @@
 import { Menu } from 'antd'
+import './Menu.css'
 import {
   MailOutlined,
   AppstoreOutlined,
   SettingOutlined,
+  BarChartOutlined,
+  CloudOutlined,
+  ShopOutlined,
+  TeamOutlined,
+  UserOutlined,
+  UploadOutlined,
+  VideoCameraOutlined,
+  HomeOutlined,
 } from '@ant-design/icons'
 import React from 'react'
 
@@ -23,16 +32,17 @@ export class MyMenu extends React.Component {
     return (
       <Menu
         onClick={this.handleClick}
-        selectedKeys={[current]}
+        theme="dark"
         mode="horizontal"
+        selectedKeys={[current]}
       >
-        <Menu.Item key="mail" icon={<MailOutlined />}>
-          Home
+        <Menu.Item key="home" icon={<HomeOutlined />}>
+          <a href="/home">Home</a>
         </Menu.Item>
-        <Menu.Item key="app" icon={<AppstoreOutlined />}>
+        <Menu.Item key="about" icon={<SettingOutlined />} title="About">
           About
         </Menu.Item>
-        <SubMenu key="SubMenu" icon={<SettingOutlined />} title="Services">
+        <SubMenu key="services" icon={<AppstoreOutlined />} title="Services">
           <Menu.ItemGroup title="Item 1">
             <Menu.Item key="setting:1">Option 1</Menu.Item>
             <Menu.Item key="setting:2">Option 2</Menu.Item>
@@ -42,7 +52,7 @@ export class MyMenu extends React.Component {
             <Menu.Item key="setting:4">Option 4</Menu.Item>
           </Menu.ItemGroup>
         </SubMenu>
-        <Menu.Item key="alipay">
+        <Menu.Item key="login" icon={<UserOutlined />}>
           <a href="/login">Login</a>
         </Menu.Item>
       </Menu>
