@@ -35,11 +35,12 @@ export class MyMenu extends React.Component {
         theme="dark"
         mode="horizontal"
         selectedKeys={[current]}
+        defaultSelectedKeys={['home']}
       >
         <Menu.Item key="home" icon={<HomeOutlined />}>
           <a href="/home">Home</a>
         </Menu.Item>
-        <Menu.Item key="about" icon={<SettingOutlined />} title="About">
+        <Menu.Item key="about" icon={<SettingOutlined />}>
           About
         </Menu.Item>
         <SubMenu key="services" icon={<AppstoreOutlined />} title="Services">

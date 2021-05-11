@@ -1,10 +1,10 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import { Login } from './Login/Login'
-import { MyMenu } from './Menu/Menu'
-import { Home } from './Home/Home'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Login from './Components/Login/Login'
+import { MyMenu } from './Components/Menu/Menu'
+import { Home } from './Components/Home/Home'
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
 import { Layout, Menu, Breadcrumb } from 'antd'
 
 const { Header, Content, Footer } = Layout
@@ -33,9 +33,7 @@ export default function App() {
           >
             <BrowserRouter>
               <Switch>
-                <Route path="/home">
-                  <Home />
-                </Route>
+                <Route exact path={['/', '/home']} component={Home} />
                 <Route path="/About">{/* <About /> */}</Route>
                 <Route path="/login">
                   <Login />
