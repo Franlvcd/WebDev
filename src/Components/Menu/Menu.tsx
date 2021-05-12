@@ -38,13 +38,13 @@ export class MyMenu extends React.Component {
             <a href="/about">About</a>
           </Menu.Item>
           <SubMenu key="services" icon={<AppstoreOutlined />} title="Services">
-            <Menu.ItemGroup title="Item 1">
-              <Menu.Item key="setting:1">Option 1</Menu.Item>
-              <Menu.Item key="setting:2">Option 2</Menu.Item>
+            <Menu.ItemGroup title="Consultation Services">
+              <Menu.Item key="water">Water</Menu.Item>
+              <Menu.Item key="infrastructure">Infrastructure</Menu.Item>
             </Menu.ItemGroup>
-            <Menu.ItemGroup title="Item 2">
-              <Menu.Item key="setting:3">Option 3</Menu.Item>
-              <Menu.Item key="setting:4">Option 4</Menu.Item>
+            <Menu.ItemGroup title="Training and Education">
+              <Menu.Item key="certificates">Certificates</Menu.Item>
+              <Menu.Item key="forkids">For Kids</Menu.Item>
             </Menu.ItemGroup>
           </SubMenu>
           <Menu.Item key="login" icon={<UserOutlined />}>

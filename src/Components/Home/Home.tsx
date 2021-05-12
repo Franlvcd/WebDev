@@ -23,7 +23,8 @@ export const Home = () => {
         <Title style={{ color: 'white', textAlign: 'left' }}>
           Care to make your solution more eco-friendly?
           <Title style={{ color: 'white', textAlign: 'left' }}>
-            GREENER can help <HeartTwoTone twoToneColor="#eb2f96" />
+            GREENER can help!
+            {/* <HeartTwoTone twoToneColor="#eb2f96" /> */}
           </Title>
         </Title>
         {/* <Image
