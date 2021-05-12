@@ -1,15 +1,18 @@
 import { Form, Input, Button, Checkbox, Row, Col } from 'antd'
 import './Login.css'
-import { message, Space } from 'antd'
+import { message } from 'antd'
 import axios from 'axios'
-import { render } from '@testing-library/react'
 import React from 'react'
 import Welcome from '../Welcome/Welcome'
-import { Redirect, useHistory, withRouter } from 'react-router-dom'
 
 export default class Login extends React.Component<
   {},
-  { isLoggedIn: boolean; isCancelled: boolean; myUserName: string }
+  {
+    isLoggedIn: boolean
+    isCancelled: boolean
+    myUserName: string
+    loginTime: string
+  }
 > {
   constructor(props: any) {
     super(props)
@@ -18,6 +21,7 @@ export default class Login extends React.Component<
       isCancelled: false,
       isLoggedIn: false,
       myUserName: '',
+      loginTime: '',
     }
   }
 
@@ -30,23 +34,24 @@ export default class Login extends React.Component<
   }
 
   onFinish = (values: any) => {
-    console.log('Success:', values)
     if (values.username !== 'abc' || values.password !== '123') {
-      message.error('Incorrect Usename or Password.')
+      message.error('Incorrect username or password')
       this.setState({ isLoggedIn: false })
     } else {
-      this.setState({ isLoggedIn: true, myUserName: values.username })
+      axios
+        .get('https://run.mocky.io/v3/5fe702b8-999e-434b-9ba9-4c6a20e60cf5')
+        .then((res) => {
+          this.setState({
+            isLoggedIn: true,
+            myUserName: res.data.userName,
+            loginTime: res.data.loginTime,
+          })
+        })
     }
-
-    // axios
-    //   .get('https://run.mocky.io/v3/f36b2a4f-9de9-49e5-ac6c-5e01b9961bf8')
-    //   .then((res) => {
-    //     console.log(res.data)
-    //   })
   }
 
   onFinishFailed = (errorInfo: any) => {
-    console.log('Failed:', errorInfo)
+    message.error('Login failed.')
   }
 
   handleCancel(e: any) {
@@ -69,7 +74,7 @@ export default class Login extends React.Component<
                 label="Username"
                 name="username"
                 rules={[
-                  { required: true, message: 'Please input your username!' },
+                  { required: true, message: 'Please input your username' },
                 ]}
               >
                 <Input />
@@ -79,7 +84,7 @@ export default class Login extends React.Component<
                 label="Password"
                 name="password"
                 rules={[
-                  { required: true, message: 'Please input your password!' },
+                  { required: true, message: 'Please input your password' },
                 ]}
               >
                 <Input.Password />
@@ -108,7 +113,10 @@ export default class Login extends React.Component<
             </Form>
           </div>
         ) : (
-          <Welcome userName={this.state.myUserName} />
+          <Welcome
+            userName={this.state.myUserName}
+            loginTime={this.state.loginTime}
+          />
         )}
       </div>
     )

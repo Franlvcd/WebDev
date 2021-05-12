@@ -14,19 +14,13 @@ export default function App() {
     <div className="App">
       <Layout>
         <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-          {/* <div className="logo" /> */}
           <MyMenu />
         </Header>
-        Insert Image Here.
+        {/* TODO: Insert Image Here. */}
         <Content
           className="site-layout"
           style={{ padding: '0 50px', marginTop: 64 }}
         >
-          <Breadcrumb style={{ margin: '16px 0' }}>
-            <Breadcrumb.Item>Home</Breadcrumb.Item>
-            <Breadcrumb.Item>List</Breadcrumb.Item>
-            <Breadcrumb.Item>App</Breadcrumb.Item>
-          </Breadcrumb>
           <div
             className="site-layout-background"
             style={{ padding: 24, minHeight: 380 }}
@@ -42,7 +36,9 @@ export default function App() {
             </BrowserRouter>
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>Created by Fengyi Yang</Footer>
+        <Footer style={{ textAlign: 'center' }}>
+          Created by Fengyi Yang. Copyright 2021.
+        </Footer>
       </Layout>
     </div>
   )

@@ -1,16 +1,9 @@
 import { Menu } from 'antd'
 import './Menu.css'
 import {
-  MailOutlined,
   AppstoreOutlined,
   SettingOutlined,
-  BarChartOutlined,
-  CloudOutlined,
-  ShopOutlined,
-  TeamOutlined,
   UserOutlined,
-  UploadOutlined,
-  VideoCameraOutlined,
   HomeOutlined,
 } from '@ant-design/icons'
 import React from 'react'
@@ -19,11 +12,10 @@ const { SubMenu } = Menu
 
 export class MyMenu extends React.Component {
   state = {
-    current: 'mail',
+    current: 'home',
   }
 
   handleClick = (e: any) => {
-    console.log('click ', e)
     this.setState({ current: e.key })
   }
 
