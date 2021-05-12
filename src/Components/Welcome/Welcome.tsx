@@ -12,7 +12,7 @@ export default class Welcome extends React.Component<
     return (
       <div className="welcome">
         <Title>
-          Welcome {this.props.userName}. You last logged in on
+          Welcome {this.props.userName}. You last logged in on{' '}
           {this.props.loginTime}
         </Title>
       </div>

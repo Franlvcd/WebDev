@@ -60,7 +60,7 @@ export default class Login extends React.Component<
 
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: 'white' }}>
         {!this.state.isLoggedIn ? (
           <div className="login">
             <Form
