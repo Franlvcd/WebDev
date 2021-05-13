@@ -7,6 +7,7 @@ import {
   HomeOutlined,
 } from '@ant-design/icons'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const { SubMenu } = Menu
 
@@ -16,6 +17,7 @@ export class MyMenu extends React.Component {
   }
 
   handleClick = (e: any) => {
+    console.log(e.key)
     this.setState({ current: e.key })
   }
 
@@ -29,13 +31,15 @@ export class MyMenu extends React.Component {
           style={{ width: '100%' }}
           mode="horizontal"
           selectedKeys={[current]}
-          defaultSelectedKeys={['home']}
+          className="menu"
+          // defaultSelectedKeys={['home']}
         >
           <Menu.Item key="home" icon={<HomeOutlined />}>
-            <a href="/home">Home</a>
+            <Link to="/home">Home</Link>
           </Menu.Item>
           <Menu.Item key="about" icon={<SettingOutlined />}>
-            <a href="/about">About</a>
+            {/* <a href="/about">About</a> */}
+            <Link to="/about">About</Link>
           </Menu.Item>
           <SubMenu key="services" icon={<AppstoreOutlined />} title="Services">
             <Menu.ItemGroup title="Consultation Services">
@@ -48,7 +52,7 @@ export class MyMenu extends React.Component {
             </Menu.ItemGroup>
           </SubMenu>
           <Menu.Item key="login" icon={<UserOutlined />}>
-            <a href="/login">Login</a>
+            <Link to="/login">Login</Link>
           </Menu.Item>
         </Menu>
       </div>

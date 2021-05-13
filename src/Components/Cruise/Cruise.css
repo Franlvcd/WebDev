@@ -5,3 +5,13 @@
   padding: 50px 0;
   justify-content: center;
 }
+
+.footer-row {
+  margin-bottom: 7px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer-content-row {
+  margin-bottom: 3px;
+}
