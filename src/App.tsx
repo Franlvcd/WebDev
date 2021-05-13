@@ -1,40 +1,22 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
 import Login from './Components/Login/Login'
 import { MyMenu } from './Components/Menu/Menu'
 import { Home } from './Components/Home/Home'
 import { About } from './Components/About/About'
 import { Cruise } from './Components/Cruise/Cruise'
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
-import { Layout, Menu, Breadcrumb, Divider } from 'antd'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Layout } from 'antd'
 
 const { Header, Content, Footer } = Layout
 
 export default function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
-        <Layout>
-          <Header
-            style={{
-              position: 'fixed',
-              zIndex: 1,
-              width: '100%',
-              backgroundColor: '#FFFFFF',
-            }}
-          >
+        <Layout style={{ padding: '0px' }}>
+          <Header style={{ padding: 0, position: 'fixed', width: '100%' }}>
             <MyMenu />
           </Header>
-          {/* TODO: Insert Image Here. */}
-          <Content
-            className="site-layout"
-            style={{
-              padding: 0,
-              marginTop: '66px',
-              color: 'white',
-            }}
-          >
+          <Content className="app-content">
             <Switch>
               <Route exact path={['/', '/home']} component={Home} />
               <Route path="/About">
@@ -45,7 +27,7 @@ export default function App() {
               </Route>
             </Switch>
           </Content>
-          <Footer style={{ textAlign: 'center', backgroundColor: 'white' }}>
+          <Footer className="app-footer">
             <Cruise />
           </Footer>
         </Layout>

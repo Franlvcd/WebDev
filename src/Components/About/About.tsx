@@ -1,23 +1,8 @@
 import './About.css'
-import { Typography } from 'antd'
-import { Divider } from 'antd'
-import { Image } from 'antd'
-
-const { Title } = Typography
 
 export const About = () => {
   return (
-    <div
-    // className="about"
-    // style={{
-    // padding: 24,
-    // minHeight: 700,
-    // backgroundImage: `url("https://cdn.seeklearning.com.au/media/images/career-guide/module/environmental-engineer-module.jpg")`,
-    // backgroundPosition: 'center',
-    // backgroundSize: 'cover',
-    // backgroundRepeat: 'no-repeat',
-    // }}
-    >
+    <div>
       <div
         style={{
           padding: 0,

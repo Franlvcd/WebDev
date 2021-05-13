@@ -1,29 +1,22 @@
+import { Col, Row, Divider } from 'antd'
+import { Footer } from 'antd/lib/layout/layout'
 import './Cruise.css'
-import { Table, Tag, Space, Col, Row, Divider } from 'antd'
-import React from 'react'
-import { ConsoleSqlOutlined } from '@ant-design/icons'
+import FooterColumn from './FooterColumn/FooterColumn'
+// const tableStyle = {
+//   border: 'none',
+//   boxShadow: 'none',
+// }
 
-const tableStyle = {
-  border: 'none',
-  boxShadow: 'none',
-}
-
-const boldText = {
-  fontWeight: 'bold',
-  //   italic: { fontStyle: 'italic' },
-  //   underline: { textDecorationLine: 'underline' },
-} as const
-
-const underLine = {
-  underline: 'underline',
-} as const
+// const underLine = {
+//   underline: 'underline',
+// } as const
 
 export const Cruise = () => {
   const marginFooter = '4px'
   return (
     <div>
       <Divider />
-      <div style={{ marginLeft: '170px' }}>
+      {/* <div style={{ marginLeft: '170px' }}>
         <Row gutter={16} justify="center" align="top">
           <Col className="gutter-row" span={5}>
             <Row className="footer-row">Discover</Row>
@@ -50,8 +43,39 @@ export const Cruise = () => {
             </Row>
           </Col>
         </Row>
+      </div> */}
+      <div>
+        <Row gutter={16} justify="center" align="top">
+          <FooterColumn
+            footerHeader={'Discover'}
+            footerElements={[
+              'Products',
+              'Trails',
+              'Services',
+              'Software',
+              'Industries',
+              'Demos',
+            ]}
+            spanColumn={5}
+          ></FooterColumn>
+          <FooterColumn
+            footerHeader={'Information'}
+            footerElements={['Developers', 'Parents', 'Business Partners']}
+            spanColumn={5}
+          ></FooterColumn>
+          <FooterColumn
+            footerHeader={'Contact with us'}
+            footerElements={['Support', 'Find a solution']}
+            spanColumn={5}
+          ></FooterColumn>
+          <FooterColumn
+            footerHeader={'About Greener'}
+            footerElements={['Careers', 'Latest news']}
+            spanColumn={5}
+          ></FooterColumn>
+        </Row>
       </div>
-      <Divider />
+      <Divider style={{ marginTop: '100px' }} />
     </div>
   )
 }

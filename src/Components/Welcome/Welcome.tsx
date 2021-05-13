@@ -1,8 +1,5 @@
-import './Welcome.css'
-import { Typography } from 'antd'
 import React from 'react'
-
-const { Title } = Typography
+import './Welcome.css'
 
 export default class Welcome extends React.Component<
   { userName: string; loginTime: string },
@@ -11,10 +8,9 @@ export default class Welcome extends React.Component<
   render() {
     return (
       <div className="welcome">
-        <Title>
-          Welcome {this.props.userName}. You last logged in on{' '}
-          {this.props.loginTime}
-        </Title>
+        Welcome {this.props.userName}. You last logged in on{' '}
+        {this.props.loginTime}
+        <div className="blank-body"></div>
       </div>
     )
   }

@@ -1,9 +1,9 @@
+import React from 'react'
 import { Form, Input, Button, Checkbox, Row, Col } from 'antd'
-import './Login.css'
 import { message } from 'antd'
 import axios from 'axios'
-import React from 'react'
 import Welcome from '../Welcome/Welcome'
+import './Login.css'
 
 export default class Login extends React.Component<
   {},
@@ -52,6 +52,7 @@ export default class Login extends React.Component<
 
   onFinishFailed = (errorInfo: any) => {
     message.error('Login failed.')
+    this.setState({ isLoggedIn: false })
   }
 
   handleCancel(e: any) {
