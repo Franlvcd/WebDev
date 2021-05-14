@@ -13,7 +13,7 @@ export default function App() {
     <div>
       <BrowserRouter>
         <Layout style={{ padding: '0px' }}>
-          <Header style={{ padding: 0, position: 'fixed', width: '100%' }}>
+          <Header style={{ padding: 0, width: '100%' }}>
             <MyMenu />
           </Header>
           <Content className="app-content">

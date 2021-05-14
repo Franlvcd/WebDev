@@ -10,3 +10,75 @@
   padding: 24px;
   min-height: 700px;
 }
+
+.title-text-about,
+.vision-text {
+  font-family: 'Roboto Slab', cursive;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  /* padding-bottom: 48%; */
+  /* margin-top: 20px; */
+  /* margin-bottom: 5px; */
+}
+
+.title-text-about {
+  margin-top: 60px;
+}
+
+.vision-text {
+  margin-top: 35px;
+}
+
+.background-vision {
+  background-color: white;
+  height: 320px;
+  padding-top: 25px;
+}
+
+.about-content {
+  color: black;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-family: 'Roboto Slab', cursive;
+}
+
+@media screen and (max-width: 480px) {
+  .about-content {
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: 'Roboto Slab', cursive;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-content {
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', cursive;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-content {
+    color: black;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', cursive;
+  }
+}

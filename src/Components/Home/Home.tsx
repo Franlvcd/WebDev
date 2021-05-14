@@ -1,4 +1,3 @@
-import { Typography } from 'antd'
 import './Home.css'
 
 export const Home = () => {
@@ -16,7 +15,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className="blank-body"></div>
+      {/* <div className="blank-body"></div> */}
     </div>
   )
 }

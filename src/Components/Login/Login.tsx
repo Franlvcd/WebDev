@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Input, Button, Checkbox, Row, Col } from 'antd'
+import { Form, Input, Button, Checkbox } from 'antd'
 import { message } from 'antd'
 import axios from 'axios'
 import Welcome from '../Welcome/Welcome'
@@ -100,24 +100,27 @@ export default class Login extends React.Component<
               </Form.Item>
 
               <Form.Item {...this.tailLayout}>
-                <Row>
-                  <Col span={12}>
-                    <Button onClick={this.handleCancel}>Cancel</Button>
-                  </Col>
-                  <Col span={12}>
-                    <Button type="primary" htmlType="submit">
-                      Submit
-                    </Button>
-                  </Col>
-                </Row>
+                <Button htmlType="submit" type="primary">
+                  Login
+                </Button>
+                <Button
+                  htmlType="button"
+                  style={{ margin: '0 8px' }}
+                  onClick={this.handleCancel}
+                >
+                  Cancel
+                </Button>
               </Form.Item>
             </Form>
+            <div className="blank-body"></div>
           </div>
         ) : (
-          <Welcome
-            userName={this.state.myUserName}
-            loginTime={this.state.loginTime}
-          />
+          <div className="login">
+            <Welcome
+              userName={this.state.myUserName}
+              loginTime={this.state.loginTime}
+            />
+          </div>
         )}
       </div>
     )

@@ -1,7 +1,11 @@
 .login {
   display: flex;
-  text-align: center;
-  vertical-align: center;
-  padding: 15% 0;
+  padding: 100px 0;
   justify-content: center;
+}
+
+.blank-body {
+  padding: 24px;
+  min-height: 500px;
+  background-color: white;
 }
