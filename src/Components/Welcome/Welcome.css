@@ -1,12 +1,12 @@
 .welcome {
   text-align: center;
-  padding: 200px 0;
+  padding: 50px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .blank-body {
   padding: 24px;
-  min-height: 200px;
+  min-height: 400px;
   background-color: white;
 }
