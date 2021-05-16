@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div
+    className="home-background"
+  >
+    <div
+      className="title-colour-layer"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <div
+          className="title-text"
+        >
+          <div
+            className="title-background"
+          >
+            Care to make your solution more eco-friendly?
+          </div>
+          <div>
+            Greener can help!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

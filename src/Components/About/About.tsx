@@ -13,7 +13,7 @@ export const About = () => {
           backgroundRepeat: 'no-repeat',
         }}
       ></div>
-      <div>
+      <div data-testid="title-about">
         <p className="title-text-about">About Us</p>
         <p className="about-content">
           We are a group of people who are wildly passionate about changing the
