@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="app-footer"
+  data-testid="footer-elements"
+>
+  <div
+    className="ant-row ant-row-center ant-row-top"
+    style={
+      Object {
+        "marginLeft": -8,
+        "marginRight": -8,
+      }
+    }
+  >
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-6 ant-col-lg-5"
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "center",
+          "marginBottom": "20px",
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        }
+      }
+    >
+      <div
+        className="footer-element"
+      >
+        <div
+          className="ant-row footer-row"
+          style={Object {}}
+        >
+          Discover
+        </div>
+        <div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Products
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Trails
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Services
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Software
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Industries
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Demos
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-6 ant-col-lg-5"
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "center",
+          "marginBottom": "20px",
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        }
+      }
+    >
+      <div
+        className="footer-element"
+      >
+        <div
+          className="ant-row footer-row"
+          style={Object {}}
+        >
+          Information
+        </div>
+        <div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Developers
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Marketers
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Education
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Status
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-6 ant-col-lg-5"
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "center",
+          "marginBottom": "20px",
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        }
+      }
+    >
+      <div
+        className="footer-element"
+      >
+        <div
+          className="ant-row footer-row"
+          style={Object {}}
+        >
+          Contact Us
+        </div>
+        <div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Support
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Find a solution
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-6 ant-col-lg-5"
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "center",
+          "marginBottom": "20px",
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        }
+      }
+    >
+      <div
+        className="footer-element"
+      >
+        <div
+          className="ant-row footer-row"
+          style={Object {}}
+        >
+          About
+        </div>
+        <div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            About us
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Careers
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Latest news
+          </div>
+          <div
+            className="ant-row"
+            style={
+              Object {
+                "fontSize": "20px",
+                "marginBottom": "7px",
+              }
+            }
+          >
+            Partnership
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-divider ant-divider-horizontal"
+    role="separator"
+  />
+  <div
+    className="ant-row ant-row-center"
+    style={Object {}}
+  >
+    Copyright 2021. Designed by Frances Yang.
+  </div>
+</div>
+`;

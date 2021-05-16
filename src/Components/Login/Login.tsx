@@ -100,15 +100,15 @@ export default class Login extends React.Component<
               </Form.Item>
 
               <Form.Item {...this.tailLayout}>
-                <Button htmlType="submit" type="primary">
-                  Login
-                </Button>
                 <Button
                   htmlType="button"
                   style={{ margin: '0 8px' }}
                   onClick={this.handleCancel}
                 >
                   Cancel
+                </Button>
+                <Button htmlType="submit" type="primary">
+                  Login
                 </Button>
               </Form.Item>
             </Form>

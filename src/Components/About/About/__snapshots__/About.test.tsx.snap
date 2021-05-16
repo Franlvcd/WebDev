@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "backgroundImage": "url(\\"https://www.britannica.com/explore/savingearth/wp-content/uploads/sites/4/2019/03/environmental-engineering-hero.jpg\\")",
+        "backgroundPosition": "center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "minHeight": 500,
+        "padding": 0,
+      }
+    }
+  />
+  <div
+    data-testid="title-about"
+  >
+    <p
+      className="title-text-about"
+    >
+      About Us
+    </p>
+    <p
+      className="about-content"
+    >
+      We are a group of people who are wildly passionate about changing the way engineering solution is built. We believe jumping out of the box and thinking about a bigger picture - the globe and future generations. We exist to embrace the global ecosystem and unlock creativity. Our platform empowers the world's leading firms to build eco-fiendly solutions.
+    </p>
+  </div>
+  <div
+    className="background-vision"
+  >
+    <p
+      className="vision-text"
+    >
+      Our Vision
+    </p>
+    <p
+      className="about-content"
+    >
+      Bring inspiration and innovation to people with our expertise in envirimental engineering.
+    </p>
+  </div>
+</div>
+`;

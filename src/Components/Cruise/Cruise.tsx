@@ -10,7 +10,7 @@ const footerStyle = {
 
 export const Cruise = () => {
   return (
-    <div className="app-footer">
+    <div className="app-footer" data-testid="footer-elements">
       <Row gutter={16} justify="center" align="top">
         <Col xs={24} sm={12} md={6} lg={5} style={footerStyle}>
           <FooterColumn

@@ -7,7 +7,7 @@ export default class Welcome extends React.Component<
 > {
   render() {
     return (
-      <div className="welcome">
+      <div className="welcome" data-testid="welcome-test">
         Welcome {this.props.userName}. You last logged in on{' '}
         {this.props.loginTime}
         <div className="blank-body"></div>
