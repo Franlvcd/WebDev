@@ -13,7 +13,7 @@ global.matchMedia =
     }
   }
 
-test('renders learn react link', () => {
+test('renders homepage', () => {
   render(<App />)
   const linkElement = screen.getByText(
     /Care to make your solution more eco-friendly?/i

@@ -18,7 +18,7 @@ it('renders without crashing', () => {
   ReactDOM.render(<Cruise />, div)
 })
 
-it('renders footer columes correctly', () => {
+it('renders footer columns correctly', () => {
   const { getByTestId } = render(<Cruise />)
   expect(getByTestId('footer-elements')).toHaveTextContent(
     /(?=.*Discover)(?=.*Information)(?=.*Contact Us)(?=.*About)(?=.*Software)(?=.*Partnership)/
