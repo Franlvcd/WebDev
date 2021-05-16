@@ -194,15 +194,6 @@ exports[`matches snapshot 1`] = `
               className="ant-form-item-control-input-content"
             >
               <button
-                className="ant-btn ant-btn-primary"
-                onClick={[Function]}
-                type="submit"
-              >
-                <span>
-                  Login
-                </span>
-              </button>
-              <button
                 className="ant-btn"
                 onClick={[Function]}
                 style={
@@ -214,6 +205,15 @@ exports[`matches snapshot 1`] = `
               >
                 <span>
                   Cancel
+                </span>
+              </button>
+              <button
+                className="ant-btn ant-btn-primary"
+                onClick={[Function]}
+                type="submit"
+              >
+                <span>
+                  Login
                 </span>
               </button>
             </div>
